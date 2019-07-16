@@ -1,0 +1,94 @@
+
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #adcdff;
+}
+
+#title {
+  text-align: center;
+}
+
+.text {
+  font-family: Lato;
+}
+
+#clock-container {
+  width: 50%;
+  height: 50%;
+  margin: 0 25%;
+  margin-top: 7%;
+}
+
+#clock-face {
+  width: 50vh;
+  height: 50vh;
+  background-color: white;
+  border-radius: 100%;
+  z-index: -1000;
+  margin: 0 25vh;
+}
+
+#hour-hand {
+  width: 35%;
+  height: 2%;
+  background-color: black;
+  position: relative;
+  left: 15%;
+  top: 55%;
+  transform-origin: center right;
+}
+
+#minute-hand {
+  width: 40%;
+  height: 2%;
+  background-color: black;
+  position: relative;
+  left: 10%;
+  top: 52.5%;
+  z-index: 3;
+  transform-origin: center right;
+}
+
+#second-hand {
+  width: 45%;
+  height: 1%;
+  background-color: red;
+  position: relative;
+  left: 5%;
+  top: 50%;
+  z-index: 0;
+  transform-origin: center right;
+}
+
+#center {
+  width: 2.5%;
+  height: 2.5%;
+  position: relative;
+  top: 48.75%;
+  left: 48.75%;
+  border-radius: 100%;
+  background-color: black;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  text-align: center;
+}
+
+@keyframes tick {
+  0% {
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+
+  100% {
+    -ms-transform: rotate(450deg);
+    -webkit-transform: rotate(450deg);
+    transform: rotate(450deg);
+  }
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="A drum soundboard with keyboard support">
+    <title>Soundboard</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="index.css">
+  </head>
+  <body>
+    <header>
+      <h1 class="text" id="title">Soundboard</h1>
+      <p class="text" id="desc">Press a button or a key to play a sound</p>
+    </header>
+    <main>
+      <div id="key-container">
+        <div onclick="playBoomSound()" class="key" id="boom-button">
+          <h2 class="key-text text">A</h2>
+          <p class="key-desc text">Boom</p>
+        </div>
+        <div onclick="playClapSound()" class="key" id="clap-button">
+          <h2 class="key-text text">S</h2>
+          <p class="key-desc text">Clap</p>
+        </div>
+        <div onclick="playHiHatSound()" class="key" id="hihat-button">
+          <h2 class="key-text text">D</h2>
+          <p class="key-desc text">Hi-Hat</p>
+        </div>
+        <div onclick="playKickSound()" class="key" id="kick-button">
+          <h2 class="key-text text">F</h2>
+          <p class="key-desc text">Kick</p>
+        </div>
+        <div onclick="playOpenHatSound()" class="key" id="openhat-button">
+          <h2 class="key-text text">G</h2>
+          <p class="key-desc text">Open Hat</p>
+        </div>
+        <div onclick="playRideSound()" class="key" id="ride-button">
+          <h2 class="key-text text">H</h2>
+          <p class="key-desc text">Ride</p>
+        </div>
+        <div onclick="playSnareSound()" class="key" id="snare-button">
+          <h2 class="key-text text">J</h2>
+          <p class="key-desc text">Snare</p>
+        </div>
+        <div onclick="playTinkSound()" class="key" id="tink-button">
+          <h2 class="key-text text">K</h2>
+          <p class="key-desc text">Tink</p>
+        </div>
+        <div onclick="playTomSound()" class="key" id="tom-button">
+          <h2 class="key-text text">L</h2>
+          <p class="key-desc text">Tom</p>
+        </div>
+      </div>
+    </main>
+    <footer>
+
+    </footer>
+
+    <script>
+      playBoomSound = () => {
+        const boomSound = new Audio("https://raw.githubusercontent.com/wesbos/JavaScript30/master/01%20-%20JavaScript%20Drum%20Kit/sounds/boom.wav");
+
+        boomSound.play();
+      }
+
+      playClapSound = () => {
+        const clapSound = new Audio("https://raw.githubusercontent.com/wesbos/JavaScript30/master/01%20-%20JavaScript%20Drum%20Kit/sounds/clap.wav");
+
+        clapSound.play();
+      }
+
+      playHiHatSound = () => {
+        const hiHatSound = new Audio("https://raw.githubusercontent.com/wesbos/JavaScript30/master/01%20-%20JavaScript%20Drum%20Kit/sounds/hihat.wav");
+
+        hiHatSound.play();
+      }
+
+      playKickSound = () => {
+        const kickSound = new Audio("https://raw.githubusercontent.com/wesbos/JavaScript30/master/01%20-%20JavaScript%20Drum%20Kit/sounds/kick.wav");
+
+        kickSound.play();
+      }
+
+      playOpenHatSound = () => {
+        const openHatSound = new Audio("https://raw.githubusercontent.com/wesbos/JavaScript30/master/01%20-%20JavaScript%20Drum%20Kit/sounds/openhat.wav");
+
+        openHatSound.play();
+      }
+
+      playRideSound = () => {
+        const rideSound = new Audio("https://raw.githubusercontent.com/wesbos/JavaScript30/master/01%20-%20JavaScript%20Drum%20Kit/sounds/ride.wav");
+
+        rideSound.play();
+      }
+
+      playSnareSound = () => {
+        const snareSound = new Audio("https://raw.githubusercontent.com/wesbos/JavaScript30/master/01%20-%20JavaScript%20Drum%20Kit/sounds/snare.wav");
+
+        snareSound.play();
+      }
+
+      playTinkSound = () => {
+        const tinkSound = new Audio("https://raw.githubusercontent.com/wesbos/JavaScript30/master/01%20-%20JavaScript%20Drum%20Kit/sounds/tink.wav");
+
+        tinkSound.play();
+      }
+
+      playTomSound = () => {
+        const tomSound = new Audio("https://raw.githubusercontent.com/wesbos/JavaScript30/master/01%20-%20JavaScript%20Drum%20Kit/sounds/tom.wav");
+
+        tomSound.play();
+      }
+
+      document.addEventListener('keypress', (e) => {
+        if (e.code == "KeyA") {
+          playBoomSound();
+        }
+      })
+
+      document.addEventListener('keypress', (e) => {
+        if (e.code == "KeyS") {
+          playClapSound();
+        }
+      })
+
+      document.addEventListener('keypress', (e) => {
+        if (e.code == "KeyD") {
+          playHiHatSound();
+        }
+      })
+
+      document.addEventListener('keypress', (e) => {
+        if (e.code == "KeyF") {
+          playKickSound();
+        }
+      })
+
+      document.addEventListener('keypress', (e) => {
+        if (e.code == "KeyG") {
+          playOpenHatSound();
+        }
+      })
+
+      document.addEventListener('keypress', (e) => {
+        if (e.code == "KeyH") {
+          playRideSound();
+        }
+      })
+
+      document.addEventListener('keypress', (e) => {
+        if (e.code == "KeyJ") {
+          playSnareSound();
+        }
+      })
+
+      document.addEventListener('keypress', (e) => {
+        if (e.code == "KeyK") {
+          playTinkSound();
+        }
+      })
+
+      document.addEventListener('keypress', (e) => {
+        if (e.code == "KeyL") {
+          playTomSound();
+        }
+      })
+    </script>
+  </body>
+</html>
