@@ -1,0 +1,125 @@
+
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: #f3f77c;
+}
+
+:root {
+  --color: #000000;
+  --spacing: 5px;
+  --blur: 0px;
+}
+
+.text {
+  text-align: center;
+  font-family: 'Roboto';
+}
+
+.control-container {
+  margin: 0 5%;
+  text-align: center;
+}
+
+input {
+  width: 100%;
+}
+
+label {
+  text-align: center;
+}
+
+#editor-controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 60%;
+  margin: 0 20%;
+  margin-top: 10%;
+}
+
+#editing-image {
+  width: 70%;
+  height: 70%;
+  margin: 0 15%;
+  padding: 0;
+  overflow: hidden;
+  border: var(--spacing) solid var(--color);
+  filter: blur(var(--blur));
+  margin-top: 10%;
+}
+
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  font-size: 11px;
+}
+
+@media only screen and (min-height: 662px) {
+
+  #header {
+    margin-top: 10%;
+  }
+
+  #editing-image {
+    margin-top: 17.5%;
+  }
+}
+
+@media only screen and (min-height: 800px) {
+
+  #editing-image {
+    margin-top: 30%;
+  }
+
+}
+
+@media only screen and (min-width: 772px) {
+
+  #header {
+    margin-top: 5%;
+  }
+
+  #editing-image {
+    margin: 0 25%;
+    margin-top: 5%;
+    width: 50%;
+    height: 50%;
+  }
+
+}
+
+@media only screen and (min-width: 1100px) {
+
+  #editor-controls {
+    margin-top: 5%;
+  }
+
+}
+
+@media only screen and (min-width: 1218px) {
+
+  #header {
+    margin-top: 2.5%;
+  }
+
+  #editing-image {
+    width: 40%;
+    height: 40%;
+    margin: 0 30%;
+    margin-top: 7.5%;
+  }
+
+}
+
+@media only screen and (min-width: 1400px) {
+  #editing-image {
+    width: 30%;
+    height: 30%;
+    margin: 0 35%;
+    margin-top: 7.5%;
+  }
+}

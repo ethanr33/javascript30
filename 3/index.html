@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Image Editor</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="main.bundle.js"></script>
+  </head>
+  <body>
+      <div id="header">
+        <h1 id="title" class="text">Image Editor</h1>
+        <p id="title-desc" class="text">Try moving the sliders to see what happens to the image!</p>
+      </div>
+      <div id="editor-container">
+        <div id="editor-controls">
+          <div class="control-container">
+            <label for="spacing">Border Width:</label>
+            <input type="range" id="spacing" name="spacing" min="0" max="300" value="20">
+          </div>
+          <div class="control-container">
+            <label for="blur">Blur:</label>
+            <input type="range" id="blur" name="blur" min="0" max="10" value="0">
+          </div>
+          <div class="control-container">
+            <label for="color">Color:</label>
+            <input type="color" id="color" name="color">
+          </div>
+        </div>
+      </div>
+      <img id="editing-image" src="https://upload.wikimedia.org/wikipedia/commons/3/36/Hopetoun_falls.jpg" id="image">
+      <footer>
+        <p class="text" id="footer">Made by Ethan Roos</p>
+      </footer>
+  </body>
+</html>
