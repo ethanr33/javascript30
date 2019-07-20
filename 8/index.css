@@ -1,0 +1,28 @@
+
+body {
+  margin: 0;
+}
+
+canvas {
+  border: 1px solid black;
+}
+
+.text {
+  text-align: center;
+  font-family: Lato;
+}
+
+canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5%;
+    display: block;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
